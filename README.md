@@ -8,5 +8,10 @@ Satellite needs attitude determination to locate where its facing. Star sensor i
   - training
   - testing
 
-## Methodology 🔩
-This works consists of two part, training and testing. The training is a typical neural network workflow using Tensorflow.
+## Methodology 🛠️
+This works consists of two part, training and testing. 
+
+### Training 🔩
+The training is a typical neural network workflow using Tensorflow.
+
+### Testing 📰
