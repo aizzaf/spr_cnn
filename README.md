@@ -1,4 +1,4 @@
-# Star Pattern Recognition using CNN :large_blue_circle:
+# Star Pattern Recognition using CNN 🌠
 
 ## Introduction
 Satellite need attitude determination to locate where its facing. Star sensor is one of many sensor that satellite has to determine its attitude using pattern of stars.
