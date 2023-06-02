@@ -1,6 +1,6 @@
 # Star Pattern Recognition using CNN 🌠
 
-## Introduction
+## Introduction 🚪
 Satellite needs attitude determination to locate where its facing. Star sensor is one of many sensor that satellite has to determine its attitude using pattern of stars.
 
 ## Table of Contents 📚
@@ -8,5 +8,5 @@ Satellite needs attitude determination to locate where its facing. Star sensor i
   - training
   - testing
 
-## Methodology
+## Methodology 🔩
 This works consists of two part, training and testing. The training is a typical neural network workflow using Tensorflow.
