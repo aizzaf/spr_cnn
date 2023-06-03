@@ -55,10 +55,14 @@ The testing is typical prediction with tflite model and interpreter method.
 ```cd testing```
 
 **app.py**  
-this program will predict a single image file (jpg or png) and show the image with prediction as text and print the processing time in console. 
+This program will predict a single image file (jpg or png) and show the image with prediction as text and print the processing time in console. 
 ![image](https://github.com/aizzaf/spr_cnn/assets/92189038/8649a23b-6fb7-4c83-b797-91911d7e504a)  
 press ```Enter``` to close.
 
 **app_video.py**  
-
-
+With this program you can:  
+- predict a video consists of star image compilation  
+by changing ```cam = cv2.VideoCapture()``` to ```cam = cv2.VideoCapture($path_ov_video)```  
+or  
+- predict image from the Raspberry Pi 3B+ camera in realtime  
+by changing ```cam = cv2.VideoCapture()``` to  ```cam = cv2.VideoCapture(0)```  
