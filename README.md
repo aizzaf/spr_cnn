@@ -55,4 +55,10 @@ The testing is typical prediction with tflite model and interpreter method.
 ```cd testing```
 
 **app.py**  
+this program will predict a single image file (jpg or png) and show the image with prediction as text and print the processing time in console. 
+![image](https://github.com/aizzaf/spr_cnn/assets/92189038/8649a23b-6fb7-4c83-b797-91911d7e504a)
+press ```Enter``` to close.
+
+**app_video.py**  
+
 
