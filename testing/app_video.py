@@ -2,7 +2,10 @@ import time
 import numpy as np
 import cv2
 import tensorflow as tf
+import imageio
 import pandas as pd
+
+images = []
 
 df = pd.read_csv('izzaspr.csv')
 RA = df['RA (deg)'].tolist()[:38]
@@ -39,19 +42,22 @@ while (cam.isOpened()):
 	y = regression[0][1]
 
 	if interpreter.get_tensor(output_details[2]['index']).max() < 0.8:
-		cv2.putText(frame, 'Bintang belum dipelajari',(10,20), cv2.FONT_HERSHEY_TRIPLEX, 0.6, (255,255,255), thickness=1)
+		cv2.putText(frame, 'Bintang belum dipelajari',(5,20), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (255,255,255), thickness=1)
+		print('bintang belum dipelajari')
 	else:
 		cv2.circle(frame, (int(np.around(x*width+width/2)),int(np.around(y*height+height/2))), 20, (255,255,255), thickness=1)
-		cv2.putText(frame, 'ID=' + str(ID[label]) + ' RA=' + str(RA[label]) + '˚ DE=' + str(DE[label]) + '˚ ROLL=' + str(rotations[rotation]) + '˚', (10,20), cv2.FONT_HERSHEY_TRIPLEX, 0.6, (255,255,255), thickness=1)
+		cv2.putText(frame, 'ID=' + str(ID[label]) + ' RA=' + str(RA[label]) + 'deg DE=' + str(DE[label]) + 'deg ROLL=' + str(rotations[rotation]) + 'deg', (5,20), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (255,255,255), thickness=1)
+		print('ID=' + str(ID[label]) + ' RA=' + str(RA[label]) + 'deg DE=' + str(DE[label]) + 'deg ROLL=' + str(rotations[rotation]) + 'deg')
 
 	end = time.time()
-
+	images.append(cv2.resize(frame,(820,616)))
 	cv2.imshow('video', cv2.resize(frame,(820,616)))
 
-	print(str(1/(end-start))+' fps')
+	print(str(end-start)+' s')
 
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
 
 cam.release()
 cv2.destroyAllWindows()
+imageio.mimsave('prediction_video.gif', images)
