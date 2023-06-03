@@ -59,11 +59,12 @@ This program will predict a single image file (jpg or png), show the image with 
 ![image](https://github.com/aizzaf/spr_cnn/assets/92189038/8649a23b-6fb7-4c83-b797-91911d7e504a)  
 press ```Enter``` to close.
 
-**app_video.py**  
-This program can predict a video consists of star image compilation and print the processing time in console.  
-![prediction_mp4](https://github.com/aizzaf/spr_cnn/assets/92189038/3620b3f4-cc23-454e-a81f-edf2c85e657a)  
-
 **app_mp4.py**  
+This program can predict a video consists of star image compilation and print the processing time in console.  
+![prediction_mp4](https://github.com/aizzaf/spr_cnn/assets/92189038/456ca0d7-c3c0-4627-adc8-9d2decd53df2)
+
+
+**app_video.py**  
 This program can predict image from the Raspberry Pi 3B+ camera in realtime and print the processing time in console.  
-![prediction_video](https://github.com/aizzaf/spr_cnn/assets/92189038/3f07931e-c1d5-400a-9817-7ead32328b78)  
+![prediction_video](https://github.com/aizzaf/spr_cnn/assets/92189038/eba7000e-e17d-47b0-b466-e6fddb933062)  
 press ```q``` to close.
