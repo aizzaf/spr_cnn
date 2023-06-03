@@ -60,10 +60,10 @@ This program will predict a single image file (jpg or png), show the image with 
 press ```Enter``` to close.
 
 **app_video.py**  
-With this program you can:  
-- predict a video consists of star image compilation and print the processing time in console
-by changing ```cam = cv2.VideoCapture()``` to ```cam = cv2.VideoCapture($path_of_video)```.  
-or  
-- predict image from the Raspberry Pi 3B+ camera in realtime and print the processing time in console 
-by changing ```cam = cv2.VideoCapture()``` to  ```cam = cv2.VideoCapture(0)```.  
+This program can predict a video consists of star image compilation and print the processing time in console.  
+![prediction_mp4](https://github.com/aizzaf/spr_cnn/assets/92189038/3620b3f4-cc23-454e-a81f-edf2c85e657a)  
+
+**app_mp4.py**  
+This program can predict image from the Raspberry Pi 3B+ camera in realtime and print the processing time in console.  
+![prediction_video](https://github.com/aizzaf/spr_cnn/assets/92189038/3f07931e-c1d5-400a-9817-7ead32328b78)  
 press ```q``` to close.
