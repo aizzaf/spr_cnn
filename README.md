@@ -18,5 +18,6 @@ The training is a typical neural network workflow using Tensorflow.
 **start.sh**  
 The first thing we must do is unzip the data and installing dependencies.  
 ```sh start.sh```
+This will generate 2 folders, image folder and metadata (csv) folder.
 
 ### Testing 📰
