@@ -38,9 +38,16 @@ This notebook explains how we generate the model file (h5 or tflite). This noteb
   - TRAINING  
     This section will perform training of the empty model with training and validation data that we previously have. Once the training done, it will generate     the h5 file. Then you can evaluae the performance of the model through epoch on the graph contains of loss, ID (label) accuracy, rotation accuracy, and       coordinate accuracy.
     
-  - TRAINING FROM H5
-  - TESTING
-  - SINGLE TESTING
-  - CONVERTING TO TFLITE
+  - TRAINING FROM H5  
+    If you want to increase the epoch from compiled model you can run this section. Then you will get same performance methode as before but the epoch will be     reset. 
+    
+  - TESTING  
+    At this section we perform comparison of prediction and the true data. We evaluate accuracy on the testing set.
+    
+  - SINGLE TESTING  
+    At this section we can check the prediction by single image and then compare it to the real image.
+    
+  - CONVERTING TO TFLITE  
+    from h5 we get, we can convert it to tflite model so that it decrease in size. We can also use the tflite model for prediction. This will be explained in     Testing part.
 
 ### Testing 📰
