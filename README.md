@@ -12,6 +12,11 @@ Satellite needs attitude determination to locate where its facing. Star sensor i
 This works consists of two part, training and testing. 
 
 ### Training 🔩
-The training is a typical neural network workflow using Tensorflow.
+The training is a typical neural network workflow using Tensorflow.  
+'''cd training'''
+
+**start.sh**  
+The first thing we must do is unzip the data and installing dependencies.  
+'''sh start.sh'''
 
 ### Testing 📰
