@@ -26,7 +26,7 @@ if you want to perform id grouping, go to this notebook. This notebook will show
 **augmentation_creation.ipynb**  
 This notebook explains the method of transformation. Currently there are two methods, translation and crop. The ```translate()``` or ```crop()``` function perform single operation of transformation. The ```id_translate()``` or ```id_crop()``` function perform multiple operation of transformation within range. We use ```pool``` as multiprocessing tool, for every core (process) perform a single loop operation of transformation. If you do mistake , you can reset the data augmentation process from initial condition on ```restarting``` part.
 
-**model_creation.ipynb**
+**model_creation.ipynb**  
 This notebook explains how we generate the model file (h5 or tflite). This notebooks consits of several part.
   - DATA GATHERING
   - MODEL CREATION
