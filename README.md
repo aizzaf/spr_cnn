@@ -24,11 +24,14 @@ This will generate 2 folders, image folder and metadata (csv) folder.
 if you want to perform id grouping, go to this notebook. This notebook will show you range of star image then you can examine each manually which one is similiar and group into single group (pick the smallest star ID as group ID).
 
 **augmentation_creation.ipynb**  
-This notebook explains the method of transformation. Currently there are two methods, translation and crop. The ```translate()``` or ```crop()``` function perform single operation of transformation. The ```id_translate()``` or ```id_crop()``` function perform multiple operation of transformation within range. We use ```pool``` as multiprocessing tool, for every core (process) perform a single loop operation of transformation. If you do mistake , you can reset the data augmentation process from initial condition on ```restarting``` part.
+This notebook explains the method of transformation. Currently there are two methods, translation and crop. The ```translate()``` or ```crop()``` function perform single operation of transformation. The ```id_translate()``` or ```id_crop()``` function perform multiple operation of transformation within range. We use ```pool``` as multiprocessing tool, for every core (process) perform a single loop operation of transformation. If you do mistake , you can reset the data augmentation process from initial condition on ```restarting``` section.
 
 **model_creation.ipynb**  
-This notebook explains how we generate the model file (h5 or tflite). This notebooks consits of several part.
-  - DATA GATHERING
+This notebook explains how we generate the model file (h5 or tflite). This notebooks consits of several sections.
+  
+  - DATA GATHERING    
+    This section explains how we collect the image data and turn them into numpy array within its metadata. In the end we will get the image array as the         input (x variable) and {ID, rotation, and coordinate] as the feature we want to predict (y variable).  
+    
   - MODEL CREATION
   - TRAINING
   - TRAINING FROM H5
