@@ -50,4 +50,9 @@ This notebook explains how we generate the model file (h5 or tflite). This noteb
   - ```CONVERTING TO TFLITE```  
     from h5 we get, we can convert it to tflite model so that it decrease in size. We can also use the tflite model for prediction. This will be explained in     Testing part.
 
-### Testing 📰
+### Testing 📰  
+The testing is typical prediction with tflite model and interpreter method.
+```cd testing```
+
+**app.py**  
+
