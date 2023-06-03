@@ -30,7 +30,7 @@ This notebook explains the method of transformation. Currently there are two met
 This notebook explains how we generate the model file (h5 or tflite). This notebooks consits of several sections.
   
   - DATA GATHERING    
-    This section explains how we collect the image data and turn them into numpy array within its metadata. In the end we will get the image array as the         input (x variable) and {ID, rotation, and coordinate] as the feature we want to predict (y variable).  
+    This section explains how we collect the image data and turn them into numpy array within its metadata. In the end we will get the image array as the         input (x variable) and {ID, rotation, and coordinate] as the feature we want to predict (y variable).
     
   - MODEL CREATION
   - TRAINING
