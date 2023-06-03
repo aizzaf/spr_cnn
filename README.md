@@ -29,25 +29,25 @@ This notebook explains the method of transformation. Currently there are two met
 **model_creation.ipynb**  
 This notebook explains how we generate the model file (h5 or tflite). This notebooks consits of several sections.
   
-  - DATA GATHERING    
+  - ```DATA GATHERING```    
     This section explains how we collect the image data and turn them into numpy array within its metadata. In the end we will get the image array as the         input (x variable) and [ID, rotation, and coordinate] as the feature we want to predict (y variable). We then split those x and y data into 3 parts,           training, validation, testing with portion 8:1:1 respectively.
     
-  - MODEL CREATION  
+  - ```MODEL CREATION```  
     This section will make us an empty model with tensorflow functional method (branched neural network).
     
-  - TRAINING  
+  - ```TRAINING```  
     This section will perform training of the empty model with training and validation data that we previously have. Once the training done, it will generate     the h5 file. Then you can evaluae the performance of the model through epoch on the graph contains of loss, ID (label) accuracy, rotation accuracy, and       coordinate accuracy.
     
-  - TRAINING FROM H5  
+  - ```TRAINING FROM H5```  
     If you want to increase the epoch from compiled model you can run this section. Then you will get same performance methode as before but the epoch will be     reset. 
     
-  - TESTING  
+  - ```TESTING```  
     At this section we perform comparison of prediction and the true data. We evaluate accuracy on the testing set.
     
-  - SINGLE TESTING  
+  - ```SINGLE TESTING```  
     At this section we can check the prediction by single image and then compare it to the real image.
     
-  - CONVERTING TO TFLITE  
+  - ```CONVERTING TO TFLITE```  
     from h5 we get, we can convert it to tflite model so that it decrease in size. We can also use the tflite model for prediction. This will be explained in     Testing part.
 
 ### Testing 📰
