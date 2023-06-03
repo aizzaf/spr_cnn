@@ -5,7 +5,7 @@ Satellite needs attitude determination to locate where its facing. Star sensor i
 
 ## Table of Contents 📚
 - spr_cnn
-  - [training](https://github.com/aizzaf/spr_cnn/RAEDME.md "training")
+  - [training](https://github.com/aizzaf/spr_cnn/README.md "Training 🔩")
   - testing
 
 ## Methodology 🛠️
