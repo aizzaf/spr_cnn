@@ -1,10 +1,4 @@
-pip install opencv-python
-pip install pandas
+pip install opencv-python pandas imutils scikit-learn tensorflow pillow matplotlib
 unzip dataset.zip
-pip install imutils
-pip install scikit-learn
-pip install tensorflow
-pip install pillow
-pip install matplotlib
-sudo apt update && sudo apt upgrade -y
-sudo apt install libgl1 graphviz
+sudo apt update && sudo apt upgrade -y && sudo apt install libgl1 graphviz
+
